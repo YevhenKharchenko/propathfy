@@ -1,5 +1,5 @@
 .cookie-banner-section {
-  background: #bfbfbf;
+  background: #e5e5e5;
   padding: 40px 16px;
   width: 100%;
   max-width: 375px;
@@ -13,7 +13,7 @@
   display: none;
 
   @include media(desktop) {
-    padding: 40px 108px;
+    padding: 40px 80px;
     max-width: 1440px;
   }
 }
@@ -26,16 +26,15 @@
 }
 
 .cookie-banner-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #000;
+  color: #3a404c;
   margin-bottom: 20px;
 
   @include media(desktop) {
-    font-size: 16px;
     text-align: left;
     max-width: 808px;
     margin-bottom: 0;
@@ -51,6 +50,7 @@
 
   @include media(desktop) {
     flex-direction: row;
+    gap: 32px;
   }
 }
 
@@ -58,20 +58,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #836fff;
-  border-radius: 12px;
-  padding: 14px 20px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.57143;
-  text-transform: uppercase;
+  background: #433ccd;
+  border-radius: 8px;
+  padding: 12px 38px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
   color: #fff;
   width: 100%;
   max-width: 343px;
+  transition: all 0.3s ease-in-out;
+
+  &:active,
+  &:focus {
+    background: #332e95;
+  }
 
   @include media(desktop) {
-    width: 184px;
+    max-width: max-content;
+
+    &:hover {
+      background: #332e95;
+    }
   }
 }
 
@@ -79,20 +88,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #000;
-  border-radius: 12px;
-  padding: 13px 20px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.57143;
-  text-transform: uppercase;
-  color: #000;
+  border: 1px solid #272727;
+  border-radius: 8px;
+  padding: 11px 38px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272727;
   width: 100%;
   max-width: 343px;
+  transition: all 0.3s ease-in-out;
+
+  &:active,
+  &:focus {
+    background: #272727;
+    color: rgba(255, 255, 255, 0.8);
+  }
 
   @include media(desktop) {
-    width: 184px;
+    max-width: max-content;
+
+    &:hover {
+      background: #272727;
+      color: rgba(255, 255, 255, 0.8);
+    }
   }
 }
 

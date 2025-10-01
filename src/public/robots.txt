@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://gohubix.online/sitemap.xml
+Sitemap: https://propathfy.online/sitemap.xml
