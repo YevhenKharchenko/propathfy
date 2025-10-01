@@ -1,0 +1,91 @@
+.venture-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.venture-section {
+  padding-top: 80px;
+  padding-bottom: 120px;
+
+  @include media(desktop) {
+    padding-top: 120px;
+    padding-bottom: 140px;
+  }
+}
+
+.venture-container {
+  @include media(desktop) {
+  }
+}
+
+.venture-content-wrapper {
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+}
+
+.venture-text-wrapper {
+  margin-bottom: 60px;
+
+  @include media(desktop) {
+    width: 100%;
+    max-width: 594px;
+    margin: 0;
+  }
+}
+
+.venture-subtitle {
+  @include media(desktop) {
+  }
+}
+
+.venture-subtitle-span {
+}
+
+.venture-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.venture-list-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  @include media(desktop) {
+  }
+}
+
+.venture-icon {
+  min-width: 12px;
+  height: 12px;
+
+  @include media(desktop) {
+  }
+}
+
+.venture-list-item-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.55556;
+  color: #e5e7eb;
+
+  @include media(desktop) {
+  }
+}
+
+.venture-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    margin: 0;
+  }
+}
