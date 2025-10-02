@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pathify – Structured Web3 Learning Journey</title>
+    <meta
+      name="description"
+      content="Pathify is your structured path into crypto and Web3. From safety basics to launching your own token or DAO, follow guided steps with tools and community support."
+    />
+    <meta
+      name="keywords"
+      content="Pathify, crypto learning, Web3 steps, DeFi education, NFT guide, DAO building, token launch, blockchain journey"
+    />
+    <meta name="author" content="Pathify Labs" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://propathfy.online" />
+    <meta
+      property="og:title"
+      content="Pathify – Structured Web3 Learning Journey"
+    />
+    <meta
+      property="og:description"
+      content="Your clear step-by-step path into crypto, DeFi, NFTs, and Web3 building. Start your journey with Pathify today."
+    />
+    <meta property="og:url" content="https://propathfy.online" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://propathfy.online/preview.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Pathify – Structured Web3 Learning Journey"
+    />
+    <meta
+      name="twitter:description"
+      content="From basics to building your own Web3 project, Pathify guides you step by step with tools and community."
+    />
+    <meta name="twitter:image" content="https://propathfy.online/preview.jpg" />
+    <link rel="icon" type="image/png" href="/propathfy/favicon.png" />
+    
+    <script type="module" crossorigin src="/propathfy/commonHelpers3.js"></script>
+    <link rel="modulepreload" crossorigin href="/propathfy/assets/header-58bb0aa1.js">
+    <link rel="stylesheet" href="/propathfy/assets/header-6eef64ff.css">
+  </head>
+  <body class="body">
+    <header class="header">
+  <div class="container header-container">
+    <nav class="nav">
+      <a class="header-logo-link" href="./">
+        <img
+          class="hero-title-img"
+          src="data:image/png;base64,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"
+          alt="Logo"
+          width="34"
+          height="29"
+        /><span class="header-logo-span">propathfy</span></a
+      >
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#home">Home</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#path">Path</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#tools">Tools</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#community">Community</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#stories">Stories</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#pricing">Pricing</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#contact">Contact</a>
+        </li>
+      </ul>
+      <a href="#contact" class="header-start-link">Start Your Path Free</a>
+      <button class="nav-btn" type="button" aria-label="Open mobile menu">
+        <svg class="menu-icon" width="40" height="40">
+          <use href="/propathfy/assets/sprite-a6c6bd89.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <button class="close-btn" type="button" aria-label="Close mobile menu">
+        <svg class="close-icon" width="40" height="40">
+          <use href="/propathfy/assets/sprite-a6c6bd89.svg#icon-close"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+    <div class="context-menu">
+  <nav class="context-nav">
+    <ul class="context-nav-list">
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#home">Home</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#path">Path</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#tools">Tools</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#community">Community</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#stories">Stories</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#pricing">Pricing</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    <main>
+      <section class="section hero-section" id="home">
+  <div class="hero-bg-wrapper">
+    <div class="container hero-container">
+      <h1 class="hero-main-title">Your clear path into Web3 and beyond</h1>
+      <p class="hero-text">
+        Pathify turns scattered crypto knowledge into a structured journey —
+        guiding you step by step from beginner to builder.
+      </p>
+      <a href="#contact" class="hero-start-link">Start Your Path Free</a>
+    </div>
+  </div>
+</section>
+
+      <section class="section path-section" id="path">
+  <div class="container path-container">
+    <div class="path-content-wrapper">
+      <h2 class="section-title path-title">Path (Steps)</h2>
+      <p class="section-subtitle path-subtitle">
+        Training that feels like a quest — not a chore.
+      </p>
+      <ul class="path-list">
+        <li class="path-list-item">
+          <p class="path-item-number">01</p>
+          <div class="path-item-dot"></div>
+          <h3 class="path-item-title">Essentials</h3>
+          <p class="path-list-item-text">
+            wallets, exchanges, safety principles
+          </p>
+        </li>
+        <li class="path-list-item">
+          <p class="path-item-number">02</p>
+          <div class="path-item-dot"></div>
+          <h3 class="path-item-title">Markets</h3>
+          <p class="path-list-item-text">
+            trading basics, risk & reward, portfolio management
+          </p>
+        </li>
+        <li class="path-list-item">
+          <p class="path-item-number">03</p>
+          <div class="path-item-dot"></div>
+          <h3 class="path-item-title">DeFi</h3>
+          <p class="path-list-item-text">staking, lending, yield strategies</p>
+        </li>
+        <li class="path-list-item">
+          <p class="path-item-number">04</p>
+          <div class="path-item-dot"></div>
+          <h3 class="path-item-title">Digital Assets</h3>
+          <p class="path-list-item-text">NFTs, DAOs, and Web3 identity</p>
+        </li>
+        <li class="path-list-item">
+          <p class="path-item-number">05</p>
+          <div class="path-item-dot"></div>
+          <h3 class="path-item-title">Builders’ Hub</h3>
+          <p class="path-list-item-text">
+            launching your token, dApp, or DAO project
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="section tools-section" id="tools">
+  <div class="tools-bg-wrapper">
+    <div class="container tools-container">
+      <div class="tools-content-wrapper">
+        <div class="tools-text-wrapper">
+          <h2 class="section-title tools-title">Tools</h2>
+          <p class="section-subtitle tools-subtitle">Your Kit for Every Step</p>
+          <p class="tools-text">
+            Equip yourself with the essential tools to master every stage of
+            your Web3 journey. From tracking your portfolio and exploring DeFi
+            strategies to experimenting with NFTs, smart contracts, and
+            decentralized governance, Pathify provides a hands-on kit that lets
+            you learn by doing and build confidence at every step.
+          </p>
+        </div>
+        <ul class="tools-list">
+          <li class="tools-list-item">
+            <div class="tools-icon-wrapper">
+              <svg class="tools-icon" width="24" height="24">
+                <use href="/propathfy/assets/sprite-a6c6bd89.svg#icon-cases"></use>
+              </svg>
+            </div>
+            <p class="tools-list-item-text">Portfolio & risk tracker</p>
+          </li>
+          <li class="tools-list-item">
+            <div class="tools-icon-wrapper">
+              <svg class="tools-icon" width="24" height="24">
+                <use href="/propathfy/assets/sprite-a6c6bd89.svg#icon-layers"></use>
+              </svg>
+            </div>
+            <p class="tools-list-item-text">
+              DeFi simulator with real-time data
+            </p>
+          </li>
+          <li class="tools-list-item">
+            <div class="tools-icon-wrapper">
+              <svg class="tools-icon" width="24" height="24">
+                <use href="/propathfy/assets/sprite-a6c6bd89.svg#icon-globe"></use>
+              </svg>
+            </div>
+            <p class="tools-list-item-text">NFT minting demo</p>
+          </li>
+          <li class="tools-list-item">
+            <div class="tools-icon-wrapper">
+              <svg class="tools-icon" width="24" height="24">
+                <use href="/propathfy/assets/sprite-a6c6bd89.svg#icon-strategy"></use>
+              </svg>
+            </div>
+            <p class="tools-list-item-text">Token smart contract prototype</p>
+          </li>
+          <li class="tools-list-item">
+            <div class="tools-icon-wrapper">
+              <svg class="tools-icon" width="24" height="24">
+                <use href="/propathfy/assets/sprite-a6c6bd89.svg#icon-bar-chart"></use>
+              </svg>
+            </div>
+            <p class="tools-list-item-text">DAO governance sandbox</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section community-section" id="community">
+  <div class="container community-container">
+    <div class="community-content-wrapper">
+      <h2 class="section-title community-title">Community</h2>
+      <p class="section-subtitle community-subtitle">
+        Grow With Fellow Pathfinders
+      </p>
+      <ul class="community-list">
+        <li class="community-list-item">
+          <picture>
+            <source
+              srcset="/propathfy/assets/community-img1-mob-a1fa32c7.png "
+              media="(min-width: 1440px)"
+              width="241"
+              height="180" />
+            <source
+              srcset="/propathfy/assets/community-img1-mob-a1fa32c7.png "
+              width="279"
+              height="180" />
+            <img
+              class="community-img"
+              src="/propathfy/assets/community-img1-mob-a1fa32c7.png"
+              alt="Office"
+              width="279"
+              height="180"
+              loading="lazy"
+          /></picture>
+          <div class="community-item-text-wrapper">
+            <p class="community-list-item-text">
+              Step-based forums for all levels
+            </p>
+            <a href="" class="community-item-link">
+              <svg class="community-icon" width="24" height="24">
+                <use href="/propathfy/assets/sprite-a6c6bd89.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+        <li class="community-list-item">
+          <picture>
+            <source
+              srcset="/propathfy/assets/community-img2-mob-82e18aea.png "
+              media="(min-width: 1440px)"
+              width="241"
+              height="180" />
+            <source
+              srcset="/propathfy/assets/community-img2-mob-82e18aea.png "
+              width="279"
+              height="180" />
+            <img
+              class="community-img"
+              src="/propathfy/assets/community-img2-mob-82e18aea.png"
+              alt="Office"
+              width="279"
+              height="180"
+              loading="lazy"
+          /></picture>
+          <div class="community-item-text-wrapper">
+            <p class="community-list-item-text">
+              Weekly mentor-led live workshops
+            </p>
+            <a href="" class="community-item-link">
+              <svg class="community-icon" width="24" height="24">
+                <use href="/propathfy/assets/sprite-a6c6bd89.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+        <li class="community-list-item">
+          <picture>
+            <source
+              srcset="/propathfy/assets/community-img3-mob-f81e56e0.png "
+              media="(min-width: 1440px)"
+              width="241"
+              height="180" />
+            <source
+              srcset="/propathfy/assets/community-img3-mob-f81e56e0.png "
+              width="279"
+              height="180" />
+            <img
+              class="community-img"
+              src="/propathfy/assets/community-img3-mob-f81e56e0.png"
+              alt="Office"
+              width="279"
+              height="180"
+              loading="lazy"
+          /></picture>
+          <div class="community-item-text-wrapper">
+            <p class="community-list-item-text">
+              Peer-to-peer challenge boards
+            </p>
+            <a href="" class="community-item-link">
+              <svg class="community-icon" width="24" height="24">
+                <use href="/propathfy/assets/sprite-a6c6bd89.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+        <li class="community-list-item">
+          <picture>
+            <source
+              srcset="/propathfy/assets/community-img4-mob-320f1196.png "
+              media="(min-width: 1440px)"
+              width="241"
+              height="180" />
+            <source
+              srcset="/propathfy/assets/community-img4-mob-320f1196.png "
+              width="279"
+              height="180" />
+            <img
+              class="community-img"
+              src="/propathfy/assets/community-img4-mob-320f1196.png"
+              alt="Office"
+              width="279"
+              height="180"
+              loading="lazy"
+          /></picture>
+          <div class="community-item-text-wrapper">
+            <p class="community-list-item-text">
+              Directory of project collaborators
+            </p>
+            <a href="" class="community-item-link">
+              <svg class="community-icon" width="24" height="24">
+                <use href="/propathfy/assets/sprite-a6c6bd89.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="section stories-section" id="stories">
+  <div class="container stories-container">
+    <div class="stories-content-wrapper">
+      <h2 class="section-title stories-title">Stories</h2>
+      <p class="section-subtitle stories-subtitle">Paths That Inspire</p>
+      <ul class="stories-list">
+        <li class="stories-list-item">
+          <img
+            class="stories-img"
+            src="/propathfy/assets/stories-sofia-c044a22d.png"
+            alt="Avatar"
+            width="60"
+            height="60"
+            loading="lazy"
+          />
+          <p class="stories-list-item-name">Sofia, Berlin</p>
+          <p class="stories-list-item-text">
+            “I found clarity in a world of noise. Pathify gave me confidence to
+            start.”
+          </p>
+        </li>
+        <li class="stories-list-item">
+          <img
+            class="stories-img"
+            src="/propathfy/assets/stories-daniel-8ba32147.png"
+            alt="Avatar"
+            width="60"
+            height="60"
+            loading="lazy"
+          />
+          <p class="stories-list-item-name">Daniel, Warsaw</p>
+          <p class="stories-list-item-text">
+            “The journey structure helped me stay consistent.”
+          </p>
+        </li>
+        <li class="stories-list-item">
+          <img
+            class="stories-img"
+            src="/propathfy/assets/stories-karina-139a1980.png"
+            alt="Avatar"
+            width="60"
+            height="60"
+            loading="lazy"
+          />
+          <p class="stories-list-item-name">Karina, Tallinn</p>
+          <p class="stories-list-item-text">
+            “Our team used Pathify tools to launch a real Web3 service.”
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="section pricing-section" id="pricing">
+  <div class="pricing-bg-wrapper">
+    <div class="container pricing-container">
+      <div class="pricing-content-wrapper">
+        <div class="pricing-text-wrapper">
+          <h2 class="section-title pricing-title">Pricing</h2>
+          <p class="section-subtitle pricing-subtitle">
+            Choose Your Journey Mode
+          </p>
+          <ul class="pricing-list">
+            <li class="pricing-list-item">
+              <div class="pricing-item-title-wrapper">
+                <p class="pricing-item-title">Free Path</p>
+                <p class="pricing-item-price">€0/month</p>
+              </div>
+              <p class="pricing-item-text">Step 1 access + community forums</p>
+            </li>
+            <li class="pricing-list-item">
+              <div class="pricing-item-title-wrapper">
+                <p class="pricing-item-title">Pro Path</p>
+                <p class="pricing-item-price">€29/month</p>
+              </div>
+              <p class="pricing-item-text">full steps + all tools</p>
+            </li>
+            <li class="pricing-list-item">
+              <div class="pricing-item-title-wrapper">
+                <p class="pricing-item-title">Team Path</p>
+                <p class="pricing-item-price">€249/month</p>
+              </div>
+              <p class="pricing-item-text">
+                startups & teams with mentor sessions
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section contact-section" id="contact">
+  <div class="container contact-container">
+    <div class="contact-text-wrapper">
+      <h2 class="section-title contact-title">Contact</h2>
+      <p class="section-subtitle contact-subtitle">
+        Join Pathify and take your first step into Web3!
+      </p>
+    </div>
+    <ul class="contact-list">
+      <li class="contact-list-item">
+        <svg class="contact-icon" width="24" height="24">
+          <use href="/propathfy/assets/sprite-a6c6bd89.svg#icon-email"></use>
+        </svg>
+        <a href="mailto:info@propathfy.online" class="contact-item-link"
+          >info@propathfy.online
+        </a>
+      </li>
+      <li class="contact-list-item">
+        <svg class="contact-icon" width="24" height="24">
+          <use href="/propathfy/assets/sprite-a6c6bd89.svg#icon-location"></use>
+        </svg>
+        <a href="" class="contact-item-link"
+          >Pathify Labs, Harju 12, Tallinn, Estonia
+        </a>
+      </li>
+    </ul>
+    <a href="#home" class="contact-start-link">Start Your Path Free</a>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="container footer-container">
+    <div class="footer-top-wrapper">
+      <a href="mailto:info@propathfy.online" class="footer-email-link"
+        >info@propathfy.online</a
+      >
+      <nav class="footer-nav">
+        <ul class="footer-list">
+          <li class="footer-list-item">
+            <a class="footer-link" href="./privacy-policy.html"
+              >Privacy Policy</a
+            >
+          </li>
+          <li class="footer-list-item">
+            <a class="footer-link" href="./terms-and-conditions.html"
+              >Terms and Conditions</a
+            >
+          </li>
+          <li class="footer-list-item">
+            <a class="footer-link" href="./cookies-policy.html"
+              >Cookies Policy</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer-text">© 2025 propathfy.online All rights reserved.</p>
+  </div>
+</footer>
+
+    <section id="cookie-banner" class="cookie-banner-section">
+  <div class="cookie-banner-wrapper">
+    <p class="cookie-banner-text">
+      We use cookies to enhance your experience while using our website. By
+      continuing to use this site, you consent to our use of cookies.
+    </p>
+    <div class="cookie-banner-buttons">
+      <button class="cookie-accept-btn" id="cookie-accept">Accept</button>
+      <button class="cookie-decline-btn" id="cookie-decline">Reject</button>
+    </div>
+  </div>
+</section>
+
+
+    
+  </body>
+</html>
