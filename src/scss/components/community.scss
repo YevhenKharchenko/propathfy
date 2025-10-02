@@ -1,0 +1,104 @@
+.community-section {
+  padding-bottom: 80px;
+
+  @include media(desktop) {
+    padding-bottom: 80px;
+  }
+}
+
+.community-container {
+  @include media(desktop) {
+  }
+}
+
+.community-content-wrapper {
+  background: linear-gradient(135deg, #8b59f6 0%, #b97df7 100%);
+  border-radius: 12px;
+  padding: 40px 16px;
+
+  @include media(desktop) {
+    padding: 60px 30px;
+  }
+}
+
+.community-title {
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.community-subtitle {
+  color: #fff;
+  margin-bottom: 60px;
+
+  @include media(desktop) {
+    margin-bottom: 60px;
+  }
+}
+
+.community-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.community-list-item {
+  box-shadow: 8px 8px 16px 0 rgba(210, 159, 206, 0.2);
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px 16px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 311px;
+  min-height: 300px;
+
+  @include media(desktop) {
+    max-width: 273px;
+    min-height: 324px;
+  }
+}
+
+.community-img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.community-item-text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.community-list-item-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #7132f5;
+
+  @include media(desktop) {
+  }
+}
+
+.community-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 24px;
+  height: 24px;
+}
+
+.community-icon {
+  @include media(desktop) {
+  }
+}

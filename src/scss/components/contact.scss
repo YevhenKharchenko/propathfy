@@ -1,8 +1,9 @@
 .contact-section {
+  background: linear-gradient(180deg, #8c66e0 0%, #5a28c5 100%);
+  padding-top: 80px;
   padding-bottom: 80px;
 
   @include media(desktop) {
-    padding-bottom: 120px;
   }
 }
 
@@ -11,18 +12,11 @@
   }
 }
 
-.contact-content-wrapper {
-  background: linear-gradient(
-    90deg,
-    #f43f5e 4.33%,
-    #b537b9 53.85%,
-    #9333ea 99.99%
-  );
-  border-radius: 50px;
-  padding: 60px 16px;
+.contact-title {
+  text-align: center;
+  color: #fff;
 
   @include media(desktop) {
-    padding: 60px;
   }
 }
 
@@ -32,16 +26,21 @@
   margin-bottom: 40px;
 
   @include media(desktop) {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .contact-list {
+  padding: 0 13px;
   display: flex;
   flex-direction: column;
   gap: 32px;
   margin-bottom: 40px;
 
   @include media(desktop) {
+    padding: 0;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -65,34 +64,27 @@
 }
 
 .contact-item-link {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.55556;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
   color: #fff;
 
   @include media(desktop) {
   }
 }
 
-.contact-book-link {
-  box-shadow: inset 0 -8px 32px 0 rgba(89, 25, 108, 0.25);
-  background: rgba(131, 111, 255, 0.2),
-    linear-gradient(
-      180deg,
-      rgba(243, 238, 255, 0.2) 0%,
-      rgba(243, 238, 255, 0.2) 100%
-    );
-  border-radius: 12px;
+.contact-start-link {
+  background: #fff;
+  border-radius: 8px;
   padding: 12px 28px;
   width: 100%;
-  max-width: 311px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.57143;
-  text-transform: uppercase;
-  color: #fff;
+  max-width: 343px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #7132f5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,18 +94,12 @@
 
   &:active,
   &:focus {
-    background: #fff;
-    color: #3e3e3e;
-    border: none;
   }
 
   @include media(desktop) {
     max-width: max-content;
 
     &:hover {
-      background: #fff;
-      color: #3e3e3e;
-      border: none;
     }
   }
 }
